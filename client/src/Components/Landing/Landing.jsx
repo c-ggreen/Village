@@ -1,5 +1,6 @@
 import "./Styles.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -7,11 +8,15 @@ function Landing() {
       <div className="loginSection">
         <h1>Village</h1>
         <form className="form">
-          <input type="email" placeholder="Email"/>
-          <input type="password" placeholder="Password"/>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
           <div className="btnGroup">
-            <button>Login</button>
-            <button>Sign Up</button>
+            <Link to="/home">
+              <button>Login</button>
+            </Link>
+            <Link to="/register">
+              <button>Sign Up</button>
+            </Link>
           </div>
         </form>
       </div>

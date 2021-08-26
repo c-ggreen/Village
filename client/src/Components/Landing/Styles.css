@@ -41,6 +41,10 @@
             border-bottom-style: solid;
             box-sizing: border-box;
         }
+            input:focus{
+                outline: none;
+                border-color: #49beaa;
+            }
         .btnGroup{
             width: 100%;
             display: flex;
